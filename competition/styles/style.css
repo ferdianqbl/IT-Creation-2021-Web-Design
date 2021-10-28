@@ -409,7 +409,7 @@ section.structure {
 footer.contact {
     padding: 2rem 1rem;
     margin-top: 8.125rem;
-    background: linear-gradient(101.2deg, rgba(181, 0, 255) 0%, rgba(0, 193, 255) 100.46%);
+    background: linear-gradient(90deg, rgb(119, 216, 255) 0%, rgb(247, 125, 241) 100.46%);
 }
 
 .contact .section-text {
@@ -518,6 +518,21 @@ a.rule:hover {
     text-align: justify;
 }
 
+.founder-info{
+    position: relative;
+}
+
+.founder-info::before{
+    content: "";
+    height: 120%;
+    width: 200%;
+    background-color: #F7F7F7;
+    position: absolute;
+    z-index: -1;
+    top: -10%;
+    left: -50%;
+}
+
 #structure-main .navbar-nav--connect {
     justify-content: flex-start;
 }
@@ -616,10 +631,12 @@ a.rule:hover {
 /* === GALLERY === */
 
 .gallery {
-    background: url(../assets/gallery/gallery-bg.png);
+    background: url(../assets/gallery/gallery-bg1.png);
     background-position: center 14rem;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 75%;
+    /*background-position: center;*/
+    position: relative;
     /* background-attachment: fixed; */
 }
 
